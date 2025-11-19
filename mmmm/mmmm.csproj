@@ -100,11 +100,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
-    <Content Include="App_Data\imeg\photo_2025-11-12_09-40-26.jpg" />
-    <Content Include="App_Data\imeg\photo_2025-11-12_09-40-35.jpg" />
-    <Content Include="App_Data\imeg\photo_2025-11-12_09-52-06.jpg" />
-    <Content Include="App_Data\imeg\لقطة شاشة 2025-11-13 122938.png" />
-    <Content Include="App_Data\imeg\لقطة شاشة 2025-11-13 122956.png" />
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="imeg\photo_2025-11-12_09-40-26.jpg" />
+    <Content Include="imeg\photo_2025-11-12_09-40-35.jpg" />
+    <Content Include="imeg\photo_2025-11-12_09-52-06.jpg" />
+    <Content Include="imeg\لقطة شاشة 2025-11-13 122938.png" />
+    <Content Include="imeg\لقطة شاشة 2025-11-13 122956.png" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -158,6 +162,9 @@
     <Content Include="Homepage.aspx" />
     <Content Include="login.aspx" />
     <Content Include="WebForm3.aspx" />
+    <Content Include="susfull.aspx" />
+    <Content Include="signup.aspx" />
+    <Content Include="Usersdashboard.aspx" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -241,6 +248,13 @@
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
+    <Compile Include="test.Master.cs">
+      <DependentUpon>test.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.Master.designer.cs">
+      <DependentUpon>test.Master</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -269,12 +283,34 @@
     <Compile Include="WebForm3.aspx.designer.cs">
       <DependentUpon>WebForm3.aspx</DependentUpon>
     </Compile>
+    <Compile Include="susfull.aspx.cs">
+      <DependentUpon>susfull.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="susfull.aspx.designer.cs">
+      <DependentUpon>susfull.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="signup.aspx.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="signup.aspx.designer.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Usersdashboard.aspx.cs">
+      <DependentUpon>Usersdashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usersdashboard.aspx.designer.cs">
+      <DependentUpon>Usersdashboard.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.7.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.7.0.min.map" />
+    <Content Include="test.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

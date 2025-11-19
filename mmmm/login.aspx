@@ -1,38 +1,35 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="mmmm.WebForm2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+      <link rel="stylesheet" type="text/css" href="ext.css" >
     <style type="text/css">
         .auto-style5 {
             height: 44px;
         }
+        .button1{
+      padding: 10px 25px;
+      border-radius: 25px;
+      border: none;
+      background-color: #4E7356;
+      color: white;
+      cursor: pointer;
+      margin-top: 25px;
+      display: inline-block;}
+        .TextBox3{width:100%;}
+        .TextBox1{width:100%;}
     </style>
  </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <h3>Welcome</h3>
     <h3>Thank you for choosing our restaurant، We’re glad to have you here! Enjoy a delicious and memorable dining experience.</h3>
+    <h5>log in for user</h5>
+       
+            <asp:TextBox class="TextBox3" runat="server">your name</asp:TextBox>
 
-
-    
-
-    <table class="auto-style1">
-        <tr>
-            <td>
-                <meta charset="utf-8" />
-                <span style="white-space: pre-wrap;"><strong>log in for User</strong></span></td>
-        </tr>
-        <tr>
-            <td>
-                <asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged" Width="1473px">your name</asp:TextBox>
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style5">
-                <asp:TextBox ID="TextBox2" runat="server" Width="1469px">Phone number</asp:TextBox>
-            </td>
-        </tr>
-        <tr>
-            <td>       <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Log in" Width="1484px" BackColor="#4E7356" ForeColor="White" /></td>
-        </tr>
-    </table>
+                  <asp:TextBox class="TextBox1" runat="server">Phone number</asp:TextBox>
+     
+                     
+     
+  <asp:Button class="button1" runat="server" Text="log in" width="100%"/>
 
 
     

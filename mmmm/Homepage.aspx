@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Homepage.aspx.cs" Inherits="mmmm.WebForm1" %>
+﻿<%@ Page Title="home" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Homepage.aspx.cs" Inherits="mmmm.WebForm4" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
         <link rel="stylesheet" type="text/css" href="ext.css" >
         <style type="text/css">
@@ -20,23 +20,53 @@
             .auto-style9 {
                 height: 44px;
             }
+            .button1 {
+                padding: 10px 25px;
+                border-radius: 25px;
+                border: none;
+                background-color: #4E7356;
+                color: white;
+                cursor: pointer;
+                margin-top: 25px;
+                display: inline-block;
+                
+            }
+            .button2{ padding: 10px 25px;
+ border-radius: 25px;
+ border: none;
+ color: #4E7356;
+ cursor: pointer;
+ margin-top: 25px;
+ display: inline-block;}
+            .button3{ padding: 10px 25px;
+ border-radius: 25px;
+ border: none;
+ background-color: white;
+ color: #4E7356;
+ cursor: pointer;
+ margin-top: 25px;
+ display: inline-block;}
         </style>
+    
 </asp:Content>
 
 
   <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
+           
+      <asp:Button class="button1" runat="server" Text="log in" width="100%"/>
+              
+      <asp:Button class="button3" runat="server" Text="sign up" width="100%"/>
 
-       <h3>Welcome to our Restaurant Velora</h3>
-       <h5>Where every bite tells a story</h5>
+  <a href="Reservations.aspx" Class="button2" style="display: block; width:100%; text-align: center;" >
+      Admin? log in here
+  </a>
+       <h3>Welcome to our Restaurant VeloraWhere every bite tells a story</h3>
      <p> At Velora, dining is more than a meal — it’s an experience.
      From hand-crafted dishes to warm hospitality, we bring flavors from around the world to your table. 
      Whether you’re celebrating a special occasion or simply craving something exceptional, your seat is waiting.
      </p>
 
-       <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Log in" Width="1484px" BackColor="#4E7356" ForeColor="White" />
-<br>
-        <asp:Button ID="Button2" runat="server" OnClick="Button1_Click" Text="sign up" Width="1484px" BackColor="white" ForeColor="#4E7356" />
-        <h3>Signature dishes </h3>
+             <h3>Signature dishes </h3>
 
 
        <table class="auto-style1">
@@ -46,9 +76,9 @@
            </tr>
            <tr>
                <td class="auto-style5" align="center">
-                   <img alt="" class="auto-style7" src="App_Data/imeg/لقطة%20شاشة%202025-11-13%20122938.png"align="center" /></td>
+                   <img alt="" class="auto-style7" src="imeg/لقطة%20شاشة%202025-11-13%20122938.png"align="center" /></td>
                <td align="center">
-                   <img alt="" class="auto-style6" src="App_Data/imeg/لقطة%20شاشة%202025-11-13%20122956.png"align="center" /></td>
+                   <img alt="" class="auto-style6" src="imeg/لقطة%20شاشة%202025-11-13%20122956.png"align="center" /></td>
            </tr>
        </table>
       <h3> What our Guest Says About us</h3>
