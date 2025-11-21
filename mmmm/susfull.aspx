@@ -1,6 +1,9 @@
-﻿<%@ Page Title="Success booking" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Susfull.aspx.cs" Inherits="mmmm.WebForm4" %>
+﻿<%@ Page Title="Success booking" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Susfull.aspx.cs" Inherits="mmmm.Susfull"
+ %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+        <link rel="stylesheet" type="text/css" href="ext.css" >
+
     <style>
         .style1 {
             font-size: 22px;
@@ -17,7 +20,7 @@
             text-align: center;
         }
 
-        .style3 {
+        .bh {
             padding: 10px 25px;
             border-radius: 25px;
             border: none;
@@ -39,9 +42,11 @@
         .style5 {
             margin-top: 40px;
             color: #4E7356;
-            font-size: 20px;
-            font-weight: bold;
+            font-size: 15px;
+            font-weight: lighter;
             text-align: center;
+            border:none;
+            background-color:transparent;
         }
 
         .style6 {
@@ -55,23 +60,33 @@
     <div class="style6">
 
         <div class="style1">
-            Thank you for choosing our restaurant. We’re glad to have you here! Enjoy a<br />
+       <h3>   Thank you for choosing our restaurant. We’re glad to have you here! Enjoy a<br />
 &nbsp;delicious and memorable dining experience.
-        </div>
+       </h3>   </div>
 
         <div class="style2">
-            Your table has been booked successfully!
+          <h3>    Your table has been booked successfully!</h3>  
         </div>
 
        
-        <asp:Button class="style3" runat="server" Text=" Back to Home Page" width="50%"/>
-
-        <a href="Reservations.aspx" Class="style4">
-            Check my Reservations
-        </a>
-
+  <asp:Button 
+ID="bh" 
+runat="server" 
+Text="Back to home page" 
+CssClass="bh" 
+Width="100%" 
+onclick="bh_Click"
+      />
+          <asp:Button 
+ID="style5" 
+runat="server" 
+Text="my reservation" 
+CssClass="style5" 
+Width="100%" 
+onclick="reserve_Click"
+      />
         <div class="style5">
-            Thank you for choosing us
+           <h5> Thank you for choosing us</h5>
         </div>
 
     </div>

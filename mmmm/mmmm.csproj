@@ -161,10 +161,12 @@
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="Homepage.aspx" />
     <Content Include="login.aspx" />
-    <Content Include="WebForm3.aspx" />
     <Content Include="susfull.aspx" />
     <Content Include="signup.aspx" />
     <Content Include="Usersdashboard.aspx" />
+    <Content Include="loginAdmin.aspx" />
+    <Content Include="date.aspx" />
+    <Content Include="MyReservation.aspx" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -248,13 +250,6 @@
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
-    <Compile Include="test.Master.cs">
-      <DependentUpon>test.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="test.Master.designer.cs">
-      <DependentUpon>test.Master</DependentUpon>
-    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -275,13 +270,6 @@
     </Compile>
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm3.aspx.cs">
-      <DependentUpon>WebForm3.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm3.aspx.designer.cs">
-      <DependentUpon>WebForm3.aspx</DependentUpon>
     </Compile>
     <Compile Include="susfull.aspx.cs">
       <DependentUpon>susfull.aspx</DependentUpon>
@@ -304,13 +292,33 @@
     <Compile Include="Usersdashboard.aspx.designer.cs">
       <DependentUpon>Usersdashboard.aspx</DependentUpon>
     </Compile>
+    <Compile Include="loginAdmin.aspx.cs">
+      <DependentUpon>loginAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loginAdmin.aspx.designer.cs">
+      <DependentUpon>loginAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="date.aspx.cs">
+      <DependentUpon>date.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="date.aspx.designer.cs">
+      <DependentUpon>date.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyReservation.aspx.cs">
+      <DependentUpon>MyReservation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyReservation.aspx.designer.cs">
+      <DependentUpon>MyReservation.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.7.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.7.0.min.map" />
-    <Content Include="test.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

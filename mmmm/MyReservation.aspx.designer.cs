@@ -11,25 +11,25 @@ namespace mmmm
 {
 
 
-    public partial class Susfull
+    public partial class WebForm9
     {
 
         /// <summary>
-        /// bh control.
+        /// LabelDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button bh;
+        protected global::System.Web.UI.WebControls.Label LabelDate;
 
         /// <summary>
-        /// style5 control.
+        /// LabelTime control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button style5;
+        protected global::System.Web.UI.WebControls.Label LabelTime;
     }
 }

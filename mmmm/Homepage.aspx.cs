@@ -1,22 +1,24 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace mmmm
 {
-    public partial class WebForm1 : System.Web.UI.Page
+    public partial class Homepage : Page
     {
-        protected void Page_Load(object sender, EventArgs e)
-        {
 
+        protected void btnLogin_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Login.aspx");
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void btnSignup_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("Signup.aspx");
+        }
+        protected void login_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("loginAdmin.aspx");
         }
     }
 }

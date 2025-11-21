@@ -9,19 +9,10 @@ namespace mmmm
 {
     public partial class WebForm2 : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
+        protected void Login_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("date.aspx");
         }
 
-        protected void Login1_Authenticate(object sender, AuthenticateEventArgs e)
-        {
-
-        }
-
-        protected void TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

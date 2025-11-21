@@ -7,11 +7,16 @@ using System.Web.UI.WebControls;
 
 namespace mmmm
 {
-    public partial class WebForm4 : System.Web.UI.Page
+    public partial class Susfull : Page
     {
-        protected void Page_Load(object sender, EventArgs e)
+        protected void bh_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("homepage.aspx");
         }
+        protected void reserve_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Myreservation.aspx");
+        }
+
     }
 }

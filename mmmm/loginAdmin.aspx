@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="mmmm.WebForm2" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="mmmm.loginAdmin" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
       <link rel="stylesheet" type="text/css" href="ext.css" >
     <style type="text/css">
@@ -16,30 +16,26 @@
       display: inline-block;}
         .TextBox3{width:100%;}
         .TextBox1{width:100%;}
-        #login {
-        }
     </style>
  </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <h3>Welcome</h3>
     <h3>Thank you for choosing our restaurant، We’re glad to have you here! Enjoy a delicious and memorable dining experience.</h3>
-    <h5>log in for user</h5>
+    <h5>log in for Admin</h5>
        
-            <asp:TextBox class="TextBox3" runat="server">Enter your name</asp:TextBox>
+            <asp:TextBox class="TextBox3" runat="server">Enter your code</asp:TextBox>
 
-                  <asp:TextBox class="TextBox1" runat="server">Phone number</asp:TextBox>
      
                      
      
-    <asp:Button
-        ID="Login"
-        runat="server"
-        Text="log in"
-        CssClass="button1"
-        Width="100%"
-       onclick="Login_Click"
-        />
-
+ <asp:Button
+     ID="Login"
+     runat="server"
+     Text="log in"
+     CssClass="button1"
+     Width="100%"
+    onclick="Login_Click"
+     />
 
 
     

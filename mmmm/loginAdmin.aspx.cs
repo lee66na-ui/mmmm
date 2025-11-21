@@ -7,11 +7,12 @@ using System.Web.UI.WebControls;
 
 namespace mmmm
 {
-    public partial class test : System.Web.UI.MasterPage
+    public partial class loginAdmin : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
+        protected void Login_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("date.aspx");
         }
+
     }
 }

@@ -49,7 +49,13 @@
          </tr>
          <tr>
              <td colspan="2">
-                 <asp:Button CssClass="button1" runat="server" Text="sign up" Width="100%" />
+<asp:Button 
+    ID="Signup" 
+    runat="server" 
+    Text="sign up" 
+    CssClass="button1" 
+    Width="100%" 
+    OnClick="Signup_Click" />
              </td>
              <td >&nbsp;</td>
          </tr>

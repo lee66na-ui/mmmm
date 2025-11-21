@@ -1,4 +1,4 @@
-﻿<%@ Page Title="home" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Homepage.aspx.cs" Inherits="mmmm.WebForm4" %>
+﻿<%@ Page Title="home" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Homepage.aspx.cs" Inherits="mmmm.Homepage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
         <link rel="stylesheet" type="text/css" href="ext.css" >
         <style type="text/css">
@@ -32,20 +32,29 @@
                 
             }
             .button2{ padding: 10px 25px;
- border-radius: 25px;
- border: none;
- color: #4E7356;
- cursor: pointer;
- margin-top: 25px;
- display: inline-block;}
+              border-radius: 25px;
+              border: none;
+              color: #4E7356;
+              cursor: pointer;
+              margin-top: 25px;
+              display: inline-block;}
             .button3{ padding: 10px 25px;
- border-radius: 25px;
- border: none;
- background-color: white;
- color: #4E7356;
- cursor: pointer;
- margin-top: 25px;
- display: inline-block;}
+              border-radius: 25px;
+              border: none;
+             background-color: #4E7356;
+             color: white;
+              cursor: pointer;
+              margin-top: 25px;
+              display: inline-block;}
+                .style4 {
+    margin-top: 40px;
+    color: #4E7356;
+    font-size: 15px;
+    font-weight: lighter;
+    text-align: center;
+    border:none;
+    background-color:transparent;
+}
         </style>
     
 </asp:Content>
@@ -53,13 +62,31 @@
 
   <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
            
-      <asp:Button class="button1" runat="server" Text="log in" width="100%"/>
-              
-      <asp:Button class="button3" runat="server" Text="sign up" width="100%"/>
+      <asp:Button 
+    ID="btnLogin" 
+    runat="server" 
+    Text="log in" 
+    CssClass="button1" 
+    Width="100%" 
+    OnClick="btnLogin_Click" />
 
-  <a href="Reservations.aspx" Class="button2" style="display: block; width:100%; text-align: center;" >
-      Admin? log in here
-  </a>
+<asp:Button 
+    ID="btnSignup" 
+    runat="server" 
+    Text="sign up" 
+    CssClass="button3" 
+    Width="100%" 
+    OnClick="btnSignup_Click" />
+
+
+    <asp:Button 
+ID="style4" 
+runat="server" 
+Text="Admin? login here" 
+CssClass="style4" 
+Width="100%" 
+onclick="login_Click"
+      />
        <h3>Welcome to our Restaurant VeloraWhere every bite tells a story</h3>
      <p> At Velora, dining is more than a meal — it’s an experience.
      From hand-crafted dishes to warm hospitality, we bring flavors from around the world to your table. 
@@ -102,6 +129,7 @@
            </tr>
        </table>
 </asp:Content>
+
 
 
 

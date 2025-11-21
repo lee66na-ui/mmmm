@@ -38,10 +38,17 @@
         <table class="auto-style1">
             <tr>
                 <td>
-                    <img alt="" class="auto-style2" src="imeg/photo_2025-11-12_09-40-26.jpg" /></td>
+                   
+                    <a href="Homepage.aspx">
+                        <image alt="" class="auto-style2" src="imeg/photo_2025-11-12_09-40-26.jpg" />
+                    </a>
+                </td>
                 <td class="auto-style4" style="font-size: 30px; font-family:'Franklin Gothic Medium', 'Arial Narrow';font-weight: bold; text-align:center">Velora</td>
                 <td align="right">
-                    <img alt="" class="auto-style3" src="imeg/photo_2025-11-12_09-40-35.jpg" /></td>
+                      <a href="Homepage.aspx">
+      <image alt="" class="auto-style3" src="imeg/photo_2025-11-12_09-40-35.jpg" />
+  </a>
+                </td>
             </tr>
         </table>
     </div>
