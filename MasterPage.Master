@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="booking_system.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+  
+    .auto-style1 {
+        width: 100%;
+    }
+    .auto-style2 {
+        width: 104px;
+        height: 72px;
+    }
+    .auto-style3 {
+        width: 104px;
+        height: 72px;
+ 
+    }
+    .auto-style4 {
+        width: 423px;
+    }
+  
+</style>
+</head>
+<body>
+    <header>
+     
+          <form id="form1" runat="server">
+    <div>
+        <table class="auto-style1">
+            <tr>
+                <td>
+                   
+                </td>
+                <td class="auto-style4" style="font-size: 30px; font-family:'Franklin Gothic Medium', 'Arial Narrow';font-weight: bold; text-align:center">Velora</td>
+                <td align="right">
+                      
+                </td>
+            </tr>
+        </table>
+    </div>
+                 <div>  <p>
+      <img alt="" class="auto-style1" src="image/photo1.jpg" /></p>
+    <asp:ContentPlaceHolder ID="body" runat="server">
+
+      
+
+    </asp:ContentPlaceHolder>
+</div>
+</form>
+
+  </header>
+</body>
+</html>
